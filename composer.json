@@ -8,6 +8,12 @@
             "email": "ralf.kronen@daylaborers.de"
         }
     ],
+    "require": {
+        "php": "^8.2.0",
+        "ext-libxml": "*",
+        "ext-dom": "*",
+        "soundasleep/html2text": "^2.1"
+    },
     "autoload": {
         "psr-4": {
             "DayLaborers\\LaravelMjml\\": "src"
@@ -20,6 +26,5 @@
             ]
         }
     },
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "dev"
 }

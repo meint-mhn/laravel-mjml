@@ -20,7 +20,7 @@ return [
 
     /**
      * The path to the mjml cli command, when the cli procedure is to be used
-     * https://documentation.mjml.io/#installation
+     * https://www.npmjs.com/package/mjml
      */
-    'binary_path' => env('MJML_BINARY_PATH', base_path('node_modules/.bin/mjml')),
+    'cli_path' => env('MJML_CLI_PATH', base_path('node_modules/.bin/mjml')),
 ];
