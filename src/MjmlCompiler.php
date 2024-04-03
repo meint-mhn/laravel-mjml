@@ -21,6 +21,7 @@ class MjmlCompiler extends BladeCompiler
      */
     public function compileString($value): string
     {
+        dd($this->isMjmlBodyWrapped($value));
         return parent::compileString(
             $this->compileMjml(
                 $value,
@@ -88,6 +89,6 @@ class MjmlCompiler extends BladeCompiler
      */
     protected function isMjmlBodyWrapped(string $value): bool
     {
-        return (bool) preg_match('/<mjml>\s*<mj-body>.*<\/mj-body>\s*<\/mjml>/is', $value);
+        return (bool) preg_match('/^<mjml(?:.|\n)*?<mj-body(?:.|\n)*?<\/mj-body>(?:.|\n)*?<\/mjml>$/', $value);
     }
 }
