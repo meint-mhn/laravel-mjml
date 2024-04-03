@@ -1,0 +1,25 @@
+{
+    "name": "daylaborers/laravel-mjml",
+    "description": "Use MJML Templates with Laravel Mailables",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ralf Kronen",
+            "email": "ralf.kronen@daylaborers.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DayLaborers\\LaravelMjml\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DayLaborers\\LaravelMjml\\MjmlServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
