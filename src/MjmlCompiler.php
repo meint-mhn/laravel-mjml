@@ -21,7 +21,6 @@ class MjmlCompiler extends BladeCompiler
      */
     public function compileString($value): string
     {
-        dd($this->isMjmlBodyWrapped($value));
         return parent::compileString(
             $this->compileMjml(
                 $value,
