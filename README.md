@@ -8,7 +8,7 @@ MJML is a markup language, from MailJet, that reduces the effort required to dev
 ## Installation
 To install this package, run this composer command:
 
-`composer require dayLaborers/laravel-mjml`
+`composer require meint-mhn/laravel-mjml`
 
 After composer installs the packages, you can publish the package configuration using artisan command:
 

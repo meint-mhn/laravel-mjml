@@ -50,7 +50,9 @@ class MjmlRenderer
                 preg_replace(
                     "/[\r\n]{2,}/",
                     "\n\n",
-                    Html2Text::convert((string) $this->renderHtml($view, $data))
+                    Html2Text::convert((string) $this->renderHtml($view, $data), [
+                        'ignore_errors' => true,
+                    ])
             ),
             ENT_QUOTES,
             'UTF-8',

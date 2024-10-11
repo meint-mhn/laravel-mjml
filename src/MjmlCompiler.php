@@ -21,10 +21,12 @@ class MjmlCompiler extends BladeCompiler
      */
     public function compileString($value): string
     {
+        // Render blade before mjml
+        $mjml = parent::render($value);
         return parent::compileString(
             $this->compileMjml(
-                $value,
-                $this->isMjmlBodyWrapped($value),
+                $mjml,
+                $this->isMjmlBodyWrapped($mjml),
             )
         );
     }

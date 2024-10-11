@@ -1,11 +1,15 @@
 {
-    "name": "daylaborers/laravel-mjml",
+    "name": "meint-mhn/laravel-mjml",
     "description": "Use MJML Templates with Laravel Mailables",
     "license": "MIT",
     "authors": [
         {
             "name": "Ralf Kronen",
             "email": "ralf.kronen@daylaborers.de"
+        },
+        {
+            "name": "Meint Span",
+            "email": "meint.span@mediahuisnoord.nl"
         }
     ],
     "require": {
@@ -27,5 +31,5 @@
         }
     },
     "minimum-stability": "dev",
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
