@@ -21,8 +21,7 @@ class MjmlCompiler extends BladeCompiler
      */
     public function compileString($value): string
     {
-        // Render blade before mjml
-        $mjml = parent::render($value);
+        $mjml = parent::render($value, [], true); // render but prevent cache
         return parent::compileString(
             $this->compileMjml(
                 $mjml,
