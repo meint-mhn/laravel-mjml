@@ -64,7 +64,7 @@ class MjmlServiceProvider extends ServiceProvider
                     $app['files'],
                     $app['config']->get('view.compiled'),
                     $app['config']->get('view.relative_hash', false) ? $app->basePath() : '',
-                    $app['config']->get('view.cache', true),
+                    false, // never cache mjml compiler
                     $app['config']->get('view.compiled_extension', 'php'),
                 ), function ($compiler) {
                     $compiler->setProcedure($this->app->make(MjmlProcedure::class));
