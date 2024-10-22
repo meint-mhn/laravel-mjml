@@ -38,6 +38,10 @@ class MjmlServiceProvider extends ServiceProvider
             ->needs('$binaryPath')
             ->giveConfig('mjml.cli_path');
 
+        $this->app->when(CliProcedure::class)
+            ->needs('$nodePath')
+            ->giveConfig('mjml.node_path');
+
         $this->app['view']->addExtension('mjml.blade.php', 'mjml');
 
         $this->registerMjmlCompiler();

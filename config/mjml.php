@@ -23,4 +23,5 @@ return [
      * https://www.npmjs.com/package/mjml
      */
     'cli_path' => env('MJML_CLI_PATH', base_path('node_modules/.bin/mjml')),
+    'node_path' => env('MJML_NODE_PATH', base_path('node_modules/.bin/mjml')),
 ];

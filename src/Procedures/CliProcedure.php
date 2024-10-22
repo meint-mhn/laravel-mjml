@@ -11,8 +11,12 @@ class CliProcedure implements MjmlProcedure
 {
     /**
      * @param string $binaryPath
+     * @param string $nodePath
      */
-    public function __construct(protected string $binaryPath)
+    public function __construct(
+        protected string $binaryPath,
+        protected string $nodePath,
+    )
     {
     }
 
@@ -31,6 +35,7 @@ class CliProcedure implements MjmlProcedure
     {
         return new Process(
             [
+                $this->nodePath,
                 $this->binaryPath,
                 '-i',
                 '--config.minify',
